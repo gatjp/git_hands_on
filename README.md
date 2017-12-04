@@ -4,9 +4,44 @@
 
 ## Git イメージ図
 
+## Git のインストール・設定
+
+### Mac
+
+Mac には標準で Git がインストールされているはず。
+Homebrew で最新版を入れたければ、以下などを参照。
+
+- [HomebrewでGitをインストールする \- Qiita](https://qiita.com/micheleno13/items/133aee005ae37c28960e)
+- [HomebrewでGitをインストールする \- 1\.21 jigowatts](http://sh-yoshida.hatenablog.com/entry/2017/02/11/213323)
+
+### Windows
+
+今回は、 Git for Windows を使用する。
+
+[Git for Windows](https://git-for-windows.github.io/) からダウンロードしてインストールする。
+
+### ユーザー名、メールアドレスを設定する
+
+```
+git config --global user.name "y.kida"
+git config --global user.email "y.kida@gingerapp.co.jp"
+```
+
+以下で確認する
+
+```
+git config --list
+```
+
 ## Pull Request (PR) の流れ
 
 **ここからハンズオン開始！！**
+
+## リポジトリをクローンする
+
+```
+git clone git@github.com:gatjp/git_hands_on.git
+```
 
 ### ブランチを切る
 
@@ -16,9 +51,11 @@ git checkout -b "y-kida-pr"
 
 ### ファイルを修正する
 
-なんでも良いので、1行追加する。
+なんでも良いので、 `fixme.md` に1行追加する。
 
-```md:fixme.md
+fixme.md
+
+```
 # このファイルを編集してみましょう
 
 hogehoge
@@ -26,7 +63,7 @@ hogehoge
 
 ### 状態を確認する
 
-```bash
+```
 $ git status
 On branch y-kida-pr
 Changes not staged for commit:
@@ -38,7 +75,7 @@ Changes not staged for commit:
 
 ### 差分を確認する
 
-```bash
+```
 $ git diff
 diff --git a/fixme.md b/fixme.md
 index 78085de..da6f413 100644
