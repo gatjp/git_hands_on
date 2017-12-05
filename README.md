@@ -4,6 +4,8 @@
 
 ## Git イメージ図
 
+![Git Image](./img/git.png)
+
 ## Git のインストール・設定
 
 ### Mac
@@ -33,11 +35,15 @@ git config --global user.email "y.kida@gingerapp.co.jp"
 git config --list
 ```
 
+## GitHub のアカウントを作成する
+
+https://github.com
+
 ## Pull Request (PR) の流れ
 
 **ここからハンズオン開始！！**
 
-## リポジトリをクローンする
+### リポジトリをクローンする
 
 ```
 git clone git@github.com:gatjp/git_hands_on.git
@@ -105,6 +111,12 @@ git add .
 git commit -m "fixme.md に一行追加"
 ```
 
+### コミット履歴を確認する
+
+```
+git log
+```
+
 ### リモートリポジトリにブランチを作成する（変更を反映する）
 
 ```
@@ -122,3 +134,29 @@ git push origin y-kida-pr
 ### approve してもらったらマージする
 
 今回は、実際にはマージしない。
+
+### マージされたら、ブランチを削除する
+
+```
+git checkout master
+git checkout -D y-kida-pr
+```
+
+リモートの master ブランチの変更を取り込む
+
+```
+git pull
+```
+
+リモートの変更分を取り込まずに確認だけしたい場合
+
+```
+git fetch
+git status
+```
+
+## コンフリクトの解消
+
+## 過去のコミットを修正する
+
+## Git コマンドの補完
