@@ -202,8 +202,24 @@ git push origin y-kida-pr --force-with-lease
 
 リモートリポジトリとローカルリポジトリの履歴に違いがないか確認してくれる、的な感じらしい。
 
-`--force` だと、単純に上書きしてしまうので、 `--force-with-lease` を使おう。
+`--force` だと、単純に上書きしてしまうので、 `--force-with-lease` を使う。
 
 ## コンフリクトの解消
 
+master に向けた PR でコンフリクトが発生した場合
+
+```
+git pull --rebase origin master
+```
+
+コンフリクトを解消したら
+
+```
+git add <ファイル名>
+git rebase --continue
+git push origin <ブランチ名> --force-with-lease
+```
+
 ## Git コマンドの補完
+
+[【2ステップ】Gitコマンドでtab補完を有効にする \- Qiita](https://qiita.com/growsic/items/1fff6286061e0cd27d54)
