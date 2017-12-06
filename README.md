@@ -6,6 +6,10 @@
 
 ![Git Image](./img/git.png)
 
+## GitHub のアカウントを作成する
+
+https://github.com
+
 ## Git のインストール・設定
 
 ### Mac
@@ -24,8 +28,10 @@ Homebrew で最新版を入れたければ、以下などを参照。
 
 ### ユーザー名、メールアドレスを設定する
 
+ユーザー名、メールアドレスは GitHub のアカウントに合わせる。
+
 ```
-git config --global user.name "y.kida"
+git config --global user.name "y-kida11"
 git config --global user.email "y.kida@gingerapp.co.jp"
 ```
 
@@ -34,10 +40,6 @@ git config --global user.email "y.kida@gingerapp.co.jp"
 ```
 git config --list
 ```
-
-## GitHub のアカウントを作成する
-
-https://github.com
 
 ## Pull Request (PR) の流れ
 
@@ -109,6 +111,9 @@ git add .
 ```
 
 ### インデックスに追加したファイルをコミットする
+
+コミットメッセージは、無理に英語で書く必要はないが、海外のOSSにコミットしたりする場合も考えると、
+普段から英語で書くのも良いかもしれない。
 
 ```
 git commit -m "fixme.md に一行追加"
