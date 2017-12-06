@@ -45,6 +45,8 @@ https://github.com
 
 ### リポジトリをクローンする
 
+好きなディレクトリに移動して、以下を実行する
+
 ```
 git clone git@github.com:gatjp/git_hands_on.git
 ```
@@ -52,6 +54,7 @@ git clone git@github.com:gatjp/git_hands_on.git
 ### ブランチを切る
 
 ```
+cd git_hands_on/
 git checkout -b "y-kida-pr"
 ```
 
