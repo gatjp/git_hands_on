@@ -10,6 +10,16 @@
 
 https://github.com
 
+### SSH キーを設定する
+
+- http://monsat.hatenablog.com/entry/generating-ssh-keys-for-github
+- https://help.github.com/articles/connecting-to-github-with-ssh/
+
+### メンバーもしくはコラボレーターになる
+
+gatjp のメンバーになるか、もしくは該当リポジトリのコラボレーターになる必要がある。
+リポジトリを fork して PR を出す方法もあるが、今回は割愛する。
+
 ## Git のインストール・設定
 
 ### Mac
